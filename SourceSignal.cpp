@@ -281,9 +281,6 @@ void SourceSignal::start()
 	purified_signal_drv.DrawTwoSignals(getReal(signal), getReal(purified_signal), fd);
 	Aspectr_drv.DrawTwoSpecters(Aspectr, purified_Aspectr, fd);
 
-	CString str;
-	str.Format(L"В восстановленный сигнал вошли %i частот из %i.", fincluded, N);
-	MessageBox(mainwnd, str, L"Результат", MB_OK);
 }
 
 
